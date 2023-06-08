@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      section {
+        display: flex;
+        /* flex-item 을 어떤 방향으로 배치?*/
+        flex-direction: column;
+        flex-direction: row;
+
+        /* flex-itme 을 자동 줄바꿈을 할래말래*/
+        flex-wrap: nowrap; /* 자동 줄바꿈 */
+        flex-wrap: wrap; /* 줄바꿈 안함 */
+
+        /* direction 과 wrap 을 한번에 표현 */
+        flex-flow: row wrap;
+      }
+      div {
+        /* flex-item box 의 width 를 1:1:1... 비율로 자동 조절*/
+        /* flex-grow : 1 -> 늘어나는 박스의 크기를 비율로 조정*/
+        flex-grow: 0;
+        flex-shrink: 1;
+        /* box 의 기본크기 지정*/
+        flex-basis: 200px;
+        flex-basis: auto;
+
+        /* grow shrink basis 를 한번에 지정*/
+        flex: 0 1 auto;
+
+        /* flex: 0 1 100px; */
+        border: 1px solid green;
+        padding: 1rem;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>flex item1</div>
+      <div>flex item2</div>
+      <div>flex item3</div>
+      <div>flex item4</div>
+      <div>flex item5</div>
+      <div>flex item6</div>
+      <div>flex item7</div>
+      <div>flex item8</div>
+      <div>flex item9</div>
+      <div>flex item10</div>
+    </section>
+  </body>
+</html>
