@@ -1,0 +1,28 @@
+h2 {
+  text-align: center;
+}
+#join_form {
+  text-align: center;
+}
+#join_form label {
+  display: block;
+}
+#join_form input {
+  margin: 5px;
+  padding: 5px;
+}
+#join_form input:focus {
+  background-color: rgba(205, 222, 255, 0.863);
+}
+#join_button {
+  padding: 15px 35px 15px 35px;
+  margin-top: 10px;
+  background-color: rgb(255, 135, 105);
+  border: 0;
+  font-weight: bold;
+  font-size: 30px;
+}
+#join_button:hover {
+  background-color: rgb(9, 255, 0);
+  cursor: pointer;
+}
