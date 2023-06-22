@@ -1,0 +1,37 @@
+.today {
+  display: flex;
+  /* border: 2px solid black; */
+  border-radius: 15px;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  background-color: #1d9042;
+  color: white;
+  font-weight: bold;
+}
+span.nowtime {
+  padding-right: 10px;
+}
+span.nowtime_title {
+  display: block;
+}
+
+h3.title {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+}
+.temp {
+  /* border: 2px solid black; */
+  border-radius: 20px;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  height: 250px;
+  width: 200px;
+  background-color: #b5d8ff;
+  color: white;
+}
